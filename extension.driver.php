@@ -134,7 +134,7 @@
 			$callback = Symphony::Engine()->getPageCallback();
 
 			if($callback['driver'] == 'publish' && $callback['context']['page'] == 'index') {
-				$contents = $context['oPage']->Contents->getChildren();
+				$contents = $context['oPage']->Form->getChildren();
 
 				// check every child, since the
 				// form may not always be the first element
